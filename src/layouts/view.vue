@@ -58,7 +58,7 @@ import { ref } from "vue";
 const drawer = ref(null);
 
 const items = [
-  { text: "Home", icon: "mdi-folder", to: "/" },
+  { text: "Home", icon: "mdi-folder", to: "/home" },
   { text: "About", icon: "mdi-account-multiple", to: "/about" },
 ];
 </script>
