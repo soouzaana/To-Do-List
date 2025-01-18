@@ -4,17 +4,14 @@
       <v-img
         src="https://picsum.photos/1920/1080?random"
         gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
-        height="65"
+        height="30vh"
         cover
       >
-        <v-list>
-          <v-list-item
-            prepend-avatar="https://github.com/yurimarcon/avatars/blob/main/Colored/ToyFaces_Colored_BG_47.jpg?raw=true"
-            subtitle="todolist@google.com"
-            title="Ana Maria"
-          >
-          </v-list-item>
-        </v-list>
+        <div class="avatar-div mx-auto text-center">
+          <v-avatar image="@/assets/Default_Avatar.svg" size="80"> </v-avatar
+          ><br />
+          <span class="white-title text-h5">Vue.js</span>
+        </div>
       </v-img>
       <v-divider></v-divider>
 
@@ -43,7 +40,7 @@
       </template>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>To Do List</v-app-bar-title>
+      <v-app-bar-title class="white-title">To Do List</v-app-bar-title>
     </v-app-bar>
 
     <v-main>
@@ -58,15 +55,22 @@ import { ref } from "vue";
 const drawer = ref(null);
 
 const items = [
-  { text: "Home", icon: "mdi-folder", to: "/home" },
-  { text: "About", icon: "mdi-account-multiple", to: "/about" },
+  { text: "Tarefas", icon: "mdi-folder", to: "/home" },
+  { text: "Sobre", icon: "mdi-account-multiple", to: "/about" },
 ];
 </script>
 
-<!--scoped significa que o estilo só vai ser aplicado a este escopo-->
 <style scoped>
 a {
   text-decoration: none;
   color: #505050;
+}
+
+.white-title {
+  color: white;
+}
+
+.avatar-div{
+  margin-top: 9vh;
 }
 </style>
