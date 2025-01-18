@@ -32,7 +32,7 @@
           <strong>📨E-mail:</strong> anamariasouza701@gmail.com<br />
           <strong>👩🏽‍💻Ana Maria</strong><br />
           <img src="@/assets/octocat.png" height="20px" alt="imagem octocat" />
-          <a href="https://github.com/souzaana">/souzaana</a>
+          <a href="https://github.com/soouzaana">/soouzaana</a>
         </v-card-text>
       </p>
     </section>
